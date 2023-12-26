@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating and Zoomable Cube</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
+
+        canvas {
+            display: block;
+            flex: 1;
+        }
+
+        input[type="range"] {
+            width: 60%;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://threejs.org/build/three.min.js"></script>
+
+    <input type="range" id="zoomSlider" min="0.01" max="1.0" step="0.01" value="0.5">
+    <script src="script.js"></script>
+</body>
+</html>
